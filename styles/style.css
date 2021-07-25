@@ -10,5 +10,106 @@
 body, html {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  font-family: "Roboto";
+  color: #333333;
 }
+
+.container {
+  width: 57%;
+  margin: 0 auto;
+}
+
+.header__top-line {
+  background: #EFEFEF;
+}
+.header__top-line-wrapper {
+  font-size: 0.8rem;
+  margin: 0 auto;
+  padding: 17px 0;
+  width: 24%;
+}
+.header__top-line-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header .logo::after {
+  position: relative;
+  top: -25px;
+  left: 16px;
+  content: "BEAUTY";
+  font-family: "ROBOTO";
+  color: #F13C6E;
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+.header__second-line {
+  padding: 20px 0;
+  border: 1px solid #EFEFEF;
+}
+.header__second-line-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header__second-line-wrapper .finder input {
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  background-color: #EFEFEF;
+}
+.header__second-line-wrapper .number-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.header__second-line-wrapper .number-block__call-btn {
+  border: 2px #F13C6E solid;
+  border-radius: 40px;
+  padding: 13px 27px;
+  font-size: 14px;
+}
+.header__main-menu-wrapper {
+  width: 35%;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+.header__main-menu-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.first-screen {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 604px;
+  background: url("../img/Frame 2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.first-screen__wrapper-inner {
+  width: 30%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.first-screen__head {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.first-screen__text {
+  font-size: 0.87rem;
+  line-height: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -11,19 +11,20 @@
 <body>
     <header class="header">
         <div class="header__top-line">
-            <ul class="header__topline-list">
-                <li class="header__top-line-list-item">Доставка</li>
-                <li class="header__top-line-list-item">Оплата</li>
-                <li class="header__top-line-list-item">Отзывы</li>
-                <li class="header__top-line-list-item">Вопрос&nbsp;-&nbsp;ответ</li>
-                <li class="header__top-line-list-item">Контакты</li>
-            </ul>
+            <div class="header__top-line-wrapper">
+                <ul class="header__topline-list">
+                    <li class="header__top-line-list-item">Доставка</li>
+                    <li class="header__top-line-list-item">Оплата</li>
+                    <li class="header__top-line-list-item">Отзывы</li>
+                    <li class="header__top-line-list-item">Вопрос&nbsp;-&nbsp;ответ</li>
+                    <li class="header__top-line-list-item">Контакты</li>
+                </ul>
+            </div>
         </div>
         <div class="header__second-line">
             <div class="container header__second-line-wrapper">
                 <div class="logo">
                     <img src="img/logo.png" alt="Логотип">
-                    <span>Beauty</span>
                 </div>
                 <span class="finder">
                     <input type="search" aria-label="Поиск">
@@ -47,20 +48,17 @@
             </div>
         </div>
         <article class="first-screen">
-            <h2 class="first-screen__head">Супер кресло</h2>
-            <p class="first-screen__text">
-                Текст акции всегда отражает суть, а&nbsp;не&nbsp;просто болтовню, поэтому внимательнее
-            </p>
-            <button class="main-btn">Подробнее</button>
+            <div class="container first-screen__wrapper">
+                <div class="first-screen__wrapper-inner">
+                    <h2 class="first-screen__head">Супер кресло</h2>
+                    <p class="first-screen__text">
+                        Текст акции всегда отражает суть, а&nbsp;не&nbsp;просто болтовню, поэтому внимательнее
+                    </p>
+                    <button class="main-btn">Подробнее</button>
+                                </div>
+                </div>
         </article>
     </header>
-    <article class="first-screen">
-        <h2 class="first-screen__head">Супер кресло</h2>
-        <p class="first-screen__text">
-            Текст акции всегда отражает суть, а&nbsp;не&nbsp;просто болтовню, поэтому внимательнее
-        </p>
-        <button class="main-btn">Подробнее</button>
-    </article>
     <article class="goods">
         <div class="container goods__wrapper">
             <h3 class="goods__head">Специальные предложения</h3>

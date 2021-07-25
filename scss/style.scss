@@ -11,5 +11,105 @@
 body, html {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  font-family: 'Roboto';
+  color: $dark;
+}
+.container {
+  width: 57%;
+  margin: 0 auto;
+}
+.header {
+  &__top-line {
+    background: $gray;
+  }
+  &__top-line-wrapper {
+    font-size: 0.8rem;
+    margin: 0 auto;
+    padding: 17px 0;
+    width: 447px; 
+    ul  {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  .logo::after {
+    position: relative;
+    top: -25px;
+    left: 16px;
+    content: 'BEAUTY';
+    font-family: 'ROBOTO';
+    color: $pink;
+    font-weight: 700;
+    font-size: 2.25rem;
+  }
+  &__second-line {
+    padding: 20px 0;
+    border: 1px solid #EFEFEF;
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      .finder input {
+        height: 40px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 40px;
+        background-color: $gray;
+      }
+      .number-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 30%;
+        &__call-btn {
+          border: 2px $pink solid;
+          border-radius: 40px;
+          padding: 13px 27px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &__main-menu {
+    &-wrapper {
+      width: 675px;
+      padding: 30px 0;
+      margin: 0 auto;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+.first-screen {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 604px;
+  background: url('../img/Frame\ 2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  &__wrapper-inner {
+    width: 308px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__head {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  &__text {
+    font-size: 0.87rem;
+    line-height: 20px;
+  }
 }
