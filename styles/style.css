@@ -173,6 +173,15 @@ body, html {
   padding: 35px 35px;
   background: #F13C6E;
   width: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.store-info__envelope-content-wrapper {
+  width: 250px;
+}
+.store-info__visit-content-wrapper {
+  width: 170px;
 }
 
 /*# sourceMappingURL=style.css.map */

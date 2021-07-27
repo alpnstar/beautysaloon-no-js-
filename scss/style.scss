@@ -169,8 +169,18 @@ body, html {
     padding: 35px 35px;
     background: $pink;
     width: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &__envelope {
-    
+    &-content-wrapper {
+      width: 250px;
+    }
+  }
+  &__visit {
+    &-content-wrapper {
+      width: 170px;
+    }
   }
 }
