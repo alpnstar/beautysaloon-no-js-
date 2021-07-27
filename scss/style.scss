@@ -2,21 +2,36 @@
 @import url("../styles/fonts.css");
 @import 'mixins';
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   outline: none;
+}
+*::after, *::before {
+  box-sizing: border-box;
 }
 
 body, html {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto';
   color: $dark;
+  background: $gray;
 }
 .container {
-  width: 57%;
+  max-width: 1110px;
   margin: 0 auto;
+}
+.main-btn {
+  border-radius: 40px;
+  padding: 13px 27px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.main-head {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 38px;
 }
 .header {
   &__top-line {
@@ -88,15 +103,13 @@ body, html {
 }
 .first-screen {
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
   height: 604px;
   background: url('../img/Frame\ 2.png');
   background-repeat: no-repeat;
   background-position: center;
   &__wrapper-inner {
+    position: relative;
+    top: 190px;
     width: 308px;
     height: 230px;
     display: flex;
@@ -111,5 +124,53 @@ body, html {
   &__text {
     font-size: 0.87rem;
     line-height: 20px;
+  }
+  &__btn {
+    background: transparent;
+    color: white;
+    border: 2px white solid;
+  }
+}
+.goods {
+  margin-top: 80px;
+  &__goods-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .goods__cart {
+      background: white;
+      text-align: center;
+      padding: 25px 30px;
+      width: 255px;
+      &-info {
+        line-height: 24px;
+      }
+      &-price {
+        margin: 12px 0 2px 0;
+        display: block;
+        font-weight: 500;
+        font-size: 21px;
+      }
+      &-btn {
+        border: none;
+        background: $pink;
+        color: white;
+      }
+    } 
+  }
+}
+.store-info {
+  margin: 100px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__blocks {
+    padding: 35px 35px;
+    background: $pink;
+    width: 540px;
+  }
+  &__envelope {
+    
   }
 }
