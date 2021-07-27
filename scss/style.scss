@@ -161,6 +161,25 @@ body, html {
 }
 .store-info {
   margin: 100px 0;
+  color: white;
+  &__head {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__text {
+    margin: 25px 0;
+  }
+  &__btn {
+    color: whitesmoke;
+    width: 200px;
+    border: 2px solid white;
+    background: transparent;
+  }
+  input {
+    border-radius: 30px;
+    padding: 9px 25px;
+    border:none;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -175,12 +194,23 @@ body, html {
   }
   &__envelope {
     &-content-wrapper {
-      width: 250px;
+      width: 280px;
     }
   }
   &__visit {
     &-content-wrapper {
       width: 170px;
     }
+  }
+}
+.brands {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    padding: 35px 63px;
+    border: 1px solid #e3e3e3;  
   }
 }

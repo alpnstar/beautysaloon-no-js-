@@ -164,6 +164,25 @@ body, html {
 
 .store-info {
   margin: 100px 0;
+  color: white;
+}
+.store-info__head {
+  font-weight: 700;
+  font-size: 18px;
+}
+.store-info__text {
+  margin: 25px 0;
+}
+.store-info__btn {
+  color: whitesmoke;
+  width: 200px;
+  border: 2px solid white;
+  background: transparent;
+}
+.store-info input {
+  border-radius: 30px;
+  padding: 9px 25px;
+  border: none;
 }
 .store-info__wrapper {
   display: flex;
@@ -178,10 +197,20 @@ body, html {
   align-items: center;
 }
 .store-info__envelope-content-wrapper {
-  width: 250px;
+  width: 280px;
 }
 .store-info__visit-content-wrapper {
   width: 170px;
+}
+
+.brands__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.brands__item {
+  padding: 35px 63px;
+  border: 1px solid #e3e3e3;
 }
 
 /*# sourceMappingURL=style.css.map */
