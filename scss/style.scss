@@ -221,6 +221,7 @@ body, html {
   &__container {
   }
   &__blocks-wrapper {
+    padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
   }
@@ -246,6 +247,18 @@ body, html {
     color: #828282;
     li {
       line-height: 28px;
+    }
+  }
+  &__bottom {
+    padding: 38px 0;
+  }
+  &__last-line {
+    padding:25px 0;
+    background: #EFEFEF;
+    &-wrapper {
+      font-size:12px;
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

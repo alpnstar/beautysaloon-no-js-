@@ -219,6 +219,7 @@ body, html {
   background-color: white;
 }
 .footer__blocks-wrapper {
+  padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -245,6 +246,18 @@ body, html {
 }
 .footer__list li {
   line-height: 28px;
+}
+.footer__bottom {
+  padding: 38px 0;
+}
+.footer__last-line {
+  padding: 25px 0;
+  background: #EFEFEF;
+}
+.footer__last-line-wrapper {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
