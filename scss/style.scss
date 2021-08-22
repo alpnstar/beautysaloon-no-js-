@@ -33,6 +33,20 @@ body, html {
   font-size: 24px;
   margin-bottom: 38px;
 }
+.number-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 337px;
+  &__call-btn {
+    border: 2px $pink solid;
+    border-radius: 40px;
+    padding: 13px 27px;
+    font-size: 14px;
+  }
+}
+
 .header {
   &__top-line {
     background: #E5E5E5;
@@ -72,19 +86,6 @@ body, html {
         border: none;
         border-radius: 40px;
         background-color: $gray;
-      }
-      .number-block {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 30%;
-        &__call-btn {
-          border: 2px $pink solid;
-          border-radius: 40px;
-          padding: 13px 27px;
-          font-size: 14px;
-        }
       }
     }
   }
@@ -250,7 +251,26 @@ body, html {
     }
   }
   &__bottom {
-    padding: 38px 0;
+    &-wrapper {
+      padding: 38px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 236px;
+    &-item {
+      text-align: center;
+      box-sizing: border-box;
+      width: 45px;
+      border-radius: 50%;
+      padding: 10px 0;      
+      border: 2px #F13C6E solid;
+    }
   }
   &__last-line {
     padding:25px 0;
