@@ -138,15 +138,14 @@ body, html {
   margin-top: 80px;
 }
 .goods__goods-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
 }
 .goods__goods-wrapper .goods__cart {
   background: white;
   text-align: center;
   padding: 25px 30px;
-  width: 255px;
 }
 .goods__goods-wrapper .goods__cart-info {
   line-height: 24px;
