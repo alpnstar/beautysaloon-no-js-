@@ -56,6 +56,9 @@ body, html {
   font-size: 14px;
 }
 
+.header {
+  background-color: white;
+}
 .header__top-line {
   background: #E5E5E5;
 }
@@ -63,7 +66,7 @@ body, html {
   font-size: 0.8rem;
   margin: 0 auto;
   padding: 17px 0;
-  width: 447px;
+  max-width: 447px;
 }
 .header__top-line-wrapper ul {
   display: flex;
@@ -98,7 +101,7 @@ body, html {
   background-color: #EFEFEF;
 }
 .header__main-menu-wrapper {
-  width: 675px;
+  max-width: 675px;
   padding: 30px 0;
   margin: 0 auto;
 }
@@ -191,7 +194,7 @@ body, html {
 }
 .store-info__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(540px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
   grid-gap: 15px;
 }
 .store-info__blocks {
