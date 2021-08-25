@@ -195,6 +195,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
   }
+}
 .brands {
   &__wrapper {
     display: grid;
@@ -209,8 +210,6 @@ body, html {
   margin-top: 80px;
   padding-top: 60px;
   background-color: white;
-  &__container {
-  }
   &__blocks-wrapper {
     padding-bottom: 60px;
     display: grid;
