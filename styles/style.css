@@ -24,7 +24,8 @@ body, html {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1150px;
+  padding: 20px;
   margin: 0 auto;
 }
 
@@ -143,8 +144,8 @@ body, html {
 }
 .goods__goods-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(255px, auto));
+  grid-gap: 30px;
 }
 .goods__goods-wrapper .goods__cart {
   background: white;
@@ -190,8 +191,8 @@ body, html {
 }
 .store-info__wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(540px, auto));
+  grid-gap: 15px;
 }
 .store-info__blocks {
   padding: 35px 35px;
@@ -200,12 +201,15 @@ body, html {
   justify-content: space-between;
   align-items: center;
 }
+
 .brands__wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(279px, auto));
 }
 .brands__item {
-  padding: 35px 63px;
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
   border: 1px solid #e3e3e3;
 }
 
@@ -217,7 +221,8 @@ body, html {
 .footer__blocks-wrapper {
   padding-bottom: 60px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(255px, auto));
+  grid-gap: 50px 30px;
 }
 .footer__block {
   font-size: 12px;
