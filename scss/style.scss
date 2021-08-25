@@ -8,6 +8,9 @@
 *::after, *::before {
   box-sizing: border-box;
 }
+button:hover {
+  cursor: pointer;
+}
 
 body, html {
   width: 100%;
@@ -181,33 +184,30 @@ body, html {
     border:none;
   }
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 15px;
   }
   &__blocks {
     padding: 35px 35px;
     background: $pink;
-    width: 540px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   &__envelope {
     &-content-wrapper {
-      width: 280px;
     }
   }
   &__visit {
     &-content-wrapper {
-      width: 170px;
     }
   }
 }
 .brands {
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
   &__item {
     padding: 35px 63px;
@@ -222,8 +222,8 @@ body, html {
   }
   &__blocks-wrapper {
     padding-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
   }
   &__block {
     font-size: 12px;
